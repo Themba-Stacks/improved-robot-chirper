@@ -1,5 +1,5 @@
 page {
-  background: var(--background);
+  background: var(--tertiary);
   font-family: Arial, Helvetica, sans-serif; 
   color: var(--primary-text);
 }
@@ -9,5 +9,7 @@ page {
   --secondary:#E5E5E5; 
   --tertiary:#FFFFFF;
   --background: #E0E0E0;
-  --primary-text:#202020; 
+  --primary-text:#202020;
+  --secondary-text: #676767;
+  --backdrop: rgba(0, 0, 0, 0.4);
 }

@@ -6,7 +6,6 @@
     "pages/web-app/web-app"
   ],
   "window": {
-    "defaultTitle": "Chirper",
     "titleBarColor": "#FF476F",
     "backgroundColor": "#E0E0E0"
   }

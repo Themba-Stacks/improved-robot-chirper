@@ -2,10 +2,9 @@
   <view>
     <image class="cheep-profile-image" mode="scaleToFill" src="{{cheep.image}}"/>
   </view>
-  <view class="cheep-text">
-    <text>
+  <view class="cheep-text-area">
+    <text class="cheep-text">
       {{cheep.text}}
     </text>
   </view>
-
 </view>

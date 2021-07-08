@@ -1,0 +1,3 @@
+<view class="cheep-button" onTap="cheepTap">
+  <slot></slot>
+</view>

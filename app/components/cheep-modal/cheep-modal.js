@@ -2,18 +2,14 @@ import { newCheepRequest } from "/requests/request"
 
 Component({
   mixins: [],
-  data: {},
-  props: {},
-  didMount() { 
-    console.log(this.$page)
-    self = this
+  data: {
+    cheepValue: ""
   },
-  didUpdate() { },
-  didUnmount() { },
+  props: {},
   methods: {
-     onSubmit: async function (event) {
-
-      await newCheepRequest()
+     submit: async function () {
+      // await newCheepRequest(this.data.cheepValue)
+      // console.log(this.data.cheepValue)
       this.$page.setData({
         showModal: false
       })
@@ -21,7 +17,9 @@ Component({
     },
     onReset() {
       console.log('cleared form')
+    },
+    getValue(event) {
+      this.setData({cheepValue: event.detail.value})
     }
   },
-
 });

@@ -1,21 +1,28 @@
 .cheep-body {
-
-  border: solid var(--primary-pink) 1px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 600rpx;
-  padding: 20rpx;
   background-color: var(--secondary);
-
+  padding: 33rpx 48rpx 73rpx 32rpx;
+  margin: 22rpx 0;
+  border-radius: 51rpx;
 }
 
 .cheep-profile-image {
   width: 72rpx;
   height: 72rpx;
+  margin: 0 25rpx 0 0;
 }
 
-.cheep-text {
-  width: 500rpx;
+.cheep-text-area {
+  width: 475rpx;
   height: auto;
+}
+
+.cheep-text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36rpx;
+  line-height: 42rpx;
+  display: flex;
+  align-items: center;
 }

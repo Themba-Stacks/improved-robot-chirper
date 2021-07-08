@@ -4,19 +4,19 @@ import { pay } from "/pay/pay";
 
 Page({
   data: {
-    showModal: false,
+    showModal: true,
     cheeps: [
       {
-        image: "/assets/images/cheep_button.svg",
-        text: 'My Index Cheep'
+        image: "/assets/images/vodacom_logo.svg",
+        text: 'Technology can take us far but with the power of humanity, we are able to go #FurtherTogether. Learn more: https://bit.ly/3fx6DrT'
       },
       {
-        image: "/assets/images/cheep_button.svg",
-        text: 'My Index Cheep 2'
+        image: "/assets/images/vodacom_logo.svg",
+        text: 'Vodacom Contract customers can make it easy to discover the hottest African artists on Apple Music this Africa Month. Just subscribe with your Vodacom account. http://bit.ly/vatbAppleServices'
       },
       {
-        image: "/assets/images/cheep_button.svg",
-        text: 'My Index Cheep 3'
+        image: "/assets/images/vodacom_logo.svg",
+        text: 'Good morning hope you guys are doing well'
       }
     ]
   },

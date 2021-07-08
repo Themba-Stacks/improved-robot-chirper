@@ -1,3 +1,6 @@
 {
-  "component": true
+  "component": true,
+  "usingComponents": {
+    "cheep-button": "/components/cheep-button/cheep-button"
+  }
 }

@@ -1,9 +1,38 @@
-.container {
+.cheep-modal-container {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  background-color: white;
-  height: 300px;
-  top: 200rpx;
-  /* margin: 20rpx; */
-  left: 0;
+  height: 100%;
+  top: 0;
+  background-color: var(--backdrop);
+}
+
+.cheep-modal-outer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 657rpx;
+  background-color: var(--background);
+  border-radius: 77rpx;
+  color: var(--primary-text);
+  padding: 77rpx 0rpx 37rpx 0rpx;
+}
+
+.cheep-modal-textarea{
+  width: 461rpx;
+  border-radius: 52rpx;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36rpx;
+  line-height: 42rpx;
+  text-align: left;
+  padding: 64rpx 54rpx;  
+}
+
+.cheep-modal-cheep-button{
+  margin-top: 31rpx;
 }
