@@ -5,10 +5,7 @@ self.__appxInited = 1;
 require('./config$');
 
 
-      function getUserAgentInPlatformWeb() {
-        return typeof navigator !== 'undefined' ? navigator.swuserAgent || navigator.userAgent || '' : '';
-      }
-      if(getUserAgentInPlatformWeb() && (getUserAgentInPlatformWeb().indexOf('LyraVM') > 0 || getUserAgentInPlatformWeb().indexOf('AlipayIDE') > 0) ) {
+      if( navigator.userAgent && (navigator.userAgent.indexOf('LyraVM') > 0 || navigator.userAgent.indexOf('AlipayIDE') > 0) ) {
         var AFAppX = self.AFAppX.getAppContext ? self.AFAppX.getAppContext().AFAppX : self.AFAppX;
       } else {
         importScripts('https://appx/af-appx.worker.min.js');
