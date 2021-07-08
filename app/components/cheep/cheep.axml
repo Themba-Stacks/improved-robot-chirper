@@ -1,0 +1,11 @@
+<view class="cheep-body" onTap="cheepTapped">
+  <view>
+    <image class="cheep-profile-image" mode="scaleToFill" src="{{cheep.image}}"/>
+  </view>
+  <view class="cheep-text">
+    <text>
+      {{cheep.text}}
+    </text>
+  </view>
+
+</view>

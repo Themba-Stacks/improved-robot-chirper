@@ -1,0 +1,23 @@
+{
+    "result": {
+        "resultCode": "SUCCESS",
+        "resultMessage": "Success",
+        "resultStatus": "S"
+    },
+    "userInfo": {
+        "nickName": "",
+        "contactInfos": [
+            {
+                "contactType": "EMAIL",
+                "contactNo": "vibymdhq@aol.com"
+            },
+            {
+                "contactType": "MOBILE_PHONE",
+                "contactNo": "27-891359771"
+            }
+        ],
+        "userName": {
+            "firstName": "haha",
+            "lastName": "jk"
+        }
+    }

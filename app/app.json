@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/view/view",
+    "pages/profile/profile",
+    "pages/web-app/web-app"
+  ],
+  "window": {
+    "defaultTitle": "Chirper",
+    "titleBarColor": "#FF476F",
+    "backgroundColor": "#E0E0E0"
+  }
+}

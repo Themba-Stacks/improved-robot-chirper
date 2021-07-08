@@ -1,0 +1,6 @@
+<view class="container">
+  <form onSubmit="onSubmit" onReset="onReset">
+    <textarea name="cheeptext" placeholder="What's on your mind..." />
+    <button form-type="submit"> Submit</button>
+    <button formType="reset">Reset</button></form>
+</view>

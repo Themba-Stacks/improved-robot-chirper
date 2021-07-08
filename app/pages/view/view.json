@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cheep": "/components/cheep/cheep"
+  }
+}

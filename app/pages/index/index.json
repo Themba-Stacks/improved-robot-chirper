@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cheep": "/components/cheep/cheep",
+    "cheep-modal": "/components/cheep-modal/cheep-modal"
+  }
+}
+

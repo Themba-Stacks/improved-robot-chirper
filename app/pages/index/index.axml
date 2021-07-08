@@ -1,0 +1,17 @@
+<view>
+  <view class="header">
+    <image mode="aspectFit" class="heading-image" src="/assets/images/chirper_header_logo.svg" />
+  </view>
+  <view class="body">
+    <view a:for="{{cheeps}}" a:for-item="cheep" a:for-index="i">
+      <cheep cheep="{{cheep}}"></cheep>
+    </view>
+  </view>
+  <button onTap="onOpenProfile">View Profile</button>
+  <button onTap="openWebApp">Web App</button>
+  <button onTap="makePayment">Pay!</button>
+  <button  onTap="onNewCheep">
+    Cheep!
+  </view>
+</view>
+<cheep-modal a:if="{{showModal}}"></cheep-modal>

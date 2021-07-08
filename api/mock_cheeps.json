@@ -1,0 +1,52 @@
+{
+  "cheeps": [
+    {
+      "userName": "@Zuck",
+      "profileImageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/1200px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg",
+      "message": "Facebook is legit guys, I promise!"
+    },
+    {
+      "userName": "@AJ",
+      "profileImageSrc": "https://pbs.twimg.com/media/E46ftODXMAAM0Cv?format=jpg&name=medium",
+      "message": "What on earth is a Mini-Program?"
+    },
+    {
+      "handle": "@therealmocha",
+      "profileImageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+      "message": "One language to rule them all... "
+    },
+    {
+      "handle": "@therealmocha",
+      "profileImageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+      "message": "One function to find them! "
+    },
+    {
+      "userName": "@GuyFieri",
+      "profileImageSrc": "https://pbs.twimg.com/profile_images/1162445050590183424/WL2lQ7OR_400x400.jpg",
+      "message": "I'll make you a delicious cuisine, Guy Fieri style"
+    },
+    {
+      "handle": "@therealmocha",
+      "profileImageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+      "message": "One promise to resolve them all... "
+    },
+    {
+      "handle": "@therealmocha",
+      "profileImageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+      "message": "...and in the callbacks bind them."
+    },
+    {
+      "userName": "@DonaldKnuth",
+      "profileImageSrc": "https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg",
+      "message": "I'll give a Knuth dollar to anyone who can tell me why true + 100  results in 101"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ]
+}

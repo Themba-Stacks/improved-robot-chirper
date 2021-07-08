@@ -1,0 +1,21 @@
+.cheep-body {
+
+  border: solid var(--primary-pink) 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 600rpx;
+  padding: 20rpx;
+  background-color: var(--secondary);
+
+}
+
+.cheep-profile-image {
+  width: 72rpx;
+  height: 72rpx;
+}
+
+.cheep-text {
+  width: 500rpx;
+  height: auto;
+}

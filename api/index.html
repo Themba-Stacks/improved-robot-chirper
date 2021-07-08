@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Web App</title>
+    <script type="text/javascript" src="https://appx/web-view.min.js"></script>
+
+    <script>
+      try {
+        // my.alert({
+        //   content: "Web App Init"
+        // });
+
+        my.onMessage = function(e) {
+          console.log(e);
+        //   alert(e);
+          document.getElementById("result").innerHTML =
+            "Message Received from Mini-App";
+        //   my.alert({
+        //     content: JSON.stringify(e.detail),
+        //   });
+        };
+      } catch (error) {
+        if (error.message === "my is not defined") {
+          console.log("This is in a Browser");
+        } else {
+          throw error;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    My App
+    <div id="result">loading</div>
+  </body>
+
+  <script>
+    try {
+      document.getElementById("result").innerHTML = "Sent Message";
+      my.postMessage({ action: "auth" });
+      console.log("This is a Mini-APP");
+    } catch (error) {
+      if (error.message === "my is not defined") {
+        console.log("This is in a Browser");
+      } else {
+        throw error;
+      }
+    }
+  </script>
+</html>
