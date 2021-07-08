@@ -10,8 +10,10 @@
   <button onTap="onOpenProfile">View Profile</button>
   <button onTap="openWebApp">Web App</button>
   <button onTap="makePayment">Pay!</button>
-  <button  onTap="onNewCheep">
-    Cheep!
-  </view>
+  <button  onTap="showCheepModal">Cheep!</button>
 </view>
-<cheep-modal a:if="{{showModal}}"></cheep-modal>
+<cheep-modal 
+a:if="{{isModal}}"
+onShowCheepModal="showCheepModal"
+>
+</cheep-modal>

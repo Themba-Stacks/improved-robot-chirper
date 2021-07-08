@@ -10,13 +10,7 @@ Component({
      submit: async function () {
       // await newCheepRequest(this.data.cheepValue)
       // console.log(this.data.cheepValue)
-      this.$page.setData({
-        showModal: false
-      })
-
-    },
-    onReset() {
-      console.log('cleared form')
+      this.props.onShowCheepModal();
     },
     getValue(event) {
       this.setData({cheepValue: event.detail.value})

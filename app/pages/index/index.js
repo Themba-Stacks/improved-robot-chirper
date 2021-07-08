@@ -4,7 +4,7 @@ import { pay } from "/pay/pay";
 
 Page({
   data: {
-    showModal: true,
+    isModal: false,
     cheeps: [
       {
         image: "/assets/images/vodacom_logo.svg",
@@ -30,18 +30,16 @@ Page({
     // authenticateUser();
 
   },
+  showCheepModal() {
+    this.setData({isModal: !this.data.isModal});
+  },
+
   test(e) {
     console.log('hello')
     my.alert({
       content: JSON.stringify(e.detail),
     });
     this.webViewContext.postMessage({ 'sendToWebView': '1' });
-  },
-
-  onNewCheep() {
-    this.setData({
-      showModal: !this.data.showModal
-    })
   },
 
   onOpenProfile() {
