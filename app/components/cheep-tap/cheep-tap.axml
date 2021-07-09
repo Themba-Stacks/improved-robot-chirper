@@ -1,0 +1,3 @@
+<view class="cheep-tap-container" onTap="tap">
+  <image mode="aspectFit" class="cheap-tap-icon" src="/assets/images/cheep_button.svg"/>
+</view>

@@ -26,10 +26,9 @@ Page({
     this.setData({
       cheeps: cheeps
     })
-
     // authenticateUser();
-
   },
+
   showCheepModal() {
     this.setData({isModal: !this.data.isModal});
   },
@@ -42,18 +41,23 @@ Page({
     this.webViewContext.postMessage({ 'sendToWebView': '1' });
   },
 
-  onOpenProfile() {
-    my.navigateTo({
-      url: '../profile/profile',
-    });
-  },
-
   makePayment() {
     pay()
   },
+
+  openProfile() {
+    my.navigateTo({
+      url: '../profile/profile'
+    });
+  },
   openWebApp() {
     my.navigateTo({
-      url: '../web-app/web-app',
+      url: '../web-app/web-app'
+    });
+  },
+  openHome() {
+    my.navigateTo({
+      url: '../index/index'
     });
   }
 

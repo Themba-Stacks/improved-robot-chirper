@@ -1,0 +1,12 @@
+.cheep-tap-container{
+    position: absolute;
+    bottom: 160rpx;
+    right: 5rpx;
+    height: 147rpx;
+    width: 136rpx;
+}
+
+.cheap-tap-icon{
+    height: 147rpx;
+    width: 136rpx;
+}

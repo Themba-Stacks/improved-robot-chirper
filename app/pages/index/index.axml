@@ -1,17 +1,28 @@
 <view>
   <view class="header">
-    <image mode="aspectFit" class="heading-image" src="/assets/images/chirper_header_logo.svg" />
+    <image mode="aspectFit" class="heading-image" src="/assets/images/chirper_header_logo.svg"/>
   </view>
   <view class="body">
     <view a:for="{{cheeps}}" a:for-item="cheep" a:for-index="i">
       <cheep cheep="{{cheep}}"></cheep>
     </view>
   </view>
-  <button onTap="onOpenProfile">View Profile</button>
-  <button onTap="openWebApp">Web App</button>
-  <button onTap="makePayment">Pay!</button>
-  <button  onTap="showCheepModal">Cheep!</button>
+  <cheep-nav>
+    <view onTap="openHome">
+      <image mode="aspectFit" class="image-icon" src="/assets/images/home_icon.svg"/>
+    </view>
+    <view onTap="openProfile">
+      <image mode="aspectFit" class="image-icon" src="/assets/images/user_icon.svg"/>
+    </view>
+    <view onTap="openWebApp">
+      <image mode="aspectFit" class="image-icon" src="/assets/images/world-wide-web.svg"/>
+    </view>
+    <view onTap="makePayment">
+      <image mode="aspectFit" class="image-icon" src="/assets/images/credit-card.svg"/>
+    </view>
+  </cheep-nav>
 </view>
+<cheep-tap a:if="{{!isModal}}" onCheepTap="showCheepModal"/>
 <cheep-modal 
 a:if="{{isModal}}"
 onShowCheepModal="showCheepModal"
