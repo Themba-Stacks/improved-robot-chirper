@@ -9,7 +9,7 @@
   </view>
   <cheep-nav>
     <view onTap="openHome">
-      <image mode="aspectFit" class="image-icon" src="/assets/images/home_icon.svg"/>
+      <image mode="aspectFit" class="image-icon" src="/assets/images/home_icon_selected.svg"/>
     </view>
     <view onTap="openProfile">
       <image mode="aspectFit" class="image-icon" src="/assets/images/user_icon.svg"/>
