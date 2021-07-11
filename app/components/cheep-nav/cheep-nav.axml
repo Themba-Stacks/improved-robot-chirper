@@ -1,3 +1,14 @@
 <view class="cheep-nav-container">
-  <slot/>
+    <view onTap="openHome">
+      <image mode="aspectFit" class="image-icon" src="/assets/images/home_icon_{{title==='index'}}.svg"/>
+    </view>
+    <view onTap="openProfile">
+      <image mode="aspectFit" class="image-icon" src="/assets/images/user_icon_{{title==='profile'}}.svg"/>
+    </view>
+    <view onTap="openWebApp">
+      <image mode="aspectFit" class="image-icon" src="/assets/images/world_wide_web_{{title==='web'}}.svg"/>
+    </view>
+    <view onTap="openView">
+      <image mode="aspectFit" class="image-icon" src="/assets/images/credit_card_{{title==='view'}}.svg"/>
+    </view>
 </view>

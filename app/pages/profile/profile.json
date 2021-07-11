@@ -1,1 +1,9 @@
-{}
+{
+    "usingComponents": {
+        "cheep": "/components/cheep/cheep",
+        "cheep-modal": "/components/cheep-modal/cheep-modal",
+        "cheep-tap": "/components/cheep-tap/cheep-tap",
+        "cheep-nav": "/components/cheep-nav/cheep-nav",
+        "cheep-profile": "/components/cheep-profile/cheep-profile"
+      }
+}

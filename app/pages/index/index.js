@@ -4,6 +4,7 @@ import { pay } from "/pay/pay";
 
 Page({
   data: {
+    title: 'index',
     isModal: false,
     cheeps: [
       {
@@ -27,6 +28,7 @@ Page({
       cheeps: cheeps
     })
     // authenticateUser();
+    
   },
 
   showCheepModal() {
@@ -43,22 +45,6 @@ Page({
 
   makePayment() {
     pay()
-  },
-
-  openProfile() {
-    my.navigateTo({
-      url: '../profile/profile'
-    });
-  },
-  openWebApp() {
-    my.navigateTo({
-      url: '../web-app/web-app'
-    });
-  },
-  openHome() {
-    my.navigateTo({
-      url: '../index/index'
-    });
   }
 
 });

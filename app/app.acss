@@ -14,3 +14,9 @@ page {
   --icons: #C4C4C4;
   --backdrop: rgba(0, 0, 0, 0.4);
 }
+
+.image-icon{
+  height: 55rpx;
+  width: 55rpx;
+  color: var(--icons);
+}

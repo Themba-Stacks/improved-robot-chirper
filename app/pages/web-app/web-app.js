@@ -4,6 +4,9 @@ import { authenticateUser } from "/auth/auth";
 
 
 Page({
+  data: {
+    title: "web"
+  },
   onLoad(e) {
     this.webViewContext = my.createWebViewContext('web-view-1');
   },

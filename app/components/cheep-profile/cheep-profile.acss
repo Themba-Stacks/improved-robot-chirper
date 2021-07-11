@@ -1,0 +1,55 @@
+.user-details {
+    display: flex;
+    flex-direction: column;
+    width: 705rpx;
+    height: 430rpx;
+    border-radius: 50rpx;
+    background-color: var(--secondary);
+  }
+
+  .user-details-header {
+    display: flex;
+    margin-top: 50rpx;
+    margin-left: 32rpx;
+  }
+
+  .username-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left:72rpx;
+    height:80rpx; 
+    justify-content: space-evenly;
+  }
+
+  .user-name{
+    font-size: 36rpx;
+    font-weight: bold;
+  }
+  .user-handle{
+    font-size: 24rpx;
+  }
+  .profile-image {
+    width: 105rpx;
+    height: 105rpx;
+    border-radius: 15rpx;
+  }
+
+  .user-details-body {
+    margin-top: 37rpx; 
+    margin-left: 94rpx;
+  }
+
+  .user-details-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top:60rpx;
+    width:440rpx;
+    align-self: center;
+    font-size: 24rpx; 
+    font-weight: bold;
+    color: var(--primary-pink)
+  }
+
+  .cheeps-container {
+    margin-top: 32rpx;
+  }

@@ -1,9 +1,10 @@
 .cheep-nav-container{
+    position: absolute;
+    bottom: 0rpx;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     height: 120rpx;
     width: 750rpx;
-    padding: 30rpx 0 30rpx 0;
 }

@@ -7,20 +7,7 @@
       <cheep cheep="{{cheep}}"></cheep>
     </view>
   </view>
-  <cheep-nav>
-    <view onTap="openHome">
-      <image mode="aspectFit" class="image-icon" src="/assets/images/home_icon_selected.svg"/>
-    </view>
-    <view onTap="openProfile">
-      <image mode="aspectFit" class="image-icon" src="/assets/images/user_icon.svg"/>
-    </view>
-    <view onTap="openWebApp">
-      <image mode="aspectFit" class="image-icon" src="/assets/images/world-wide-web.svg"/>
-    </view>
-    <view onTap="makePayment">
-      <image mode="aspectFit" class="image-icon" src="/assets/images/credit-card.svg"/>
-    </view>
-  </cheep-nav>
+  <cheep-nav title="{{title}}"/>
 </view>
 <cheep-tap a:if="{{!isModal}}" onCheepTap="showCheepModal"/>
 <cheep-modal 

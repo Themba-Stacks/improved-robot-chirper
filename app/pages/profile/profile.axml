@@ -1,8 +1,13 @@
-<view>
-  <image mode="scaleToFill" src="{{profile_image}}"/>
-  <view>Followers: {{followers}}</view>
-  <view>Following: {{following}}</view>
-  <view>Handle: {{uniqueHandle}}</view>
-  <view>User Name: {{userName}}</view>
-  <view>Description: {{description}}</view>
+<view class="cheep-profile-page">
+  <cheep-profile profileDetail="{{userProfile}}"/>
+  <view class="body">
+    <text class= "cheeps-title">Your Cheeps</text>
+    <view a:for="{{userCheeps}}" a:for-item="cheep" a:for-index="i">
+      <cheep cheep="{{cheep}}"></cheep>
+    </view>
+  </view>
+  <cheep-nav title="{{title}}"/>
 </view>
+
+<cheep-tap a:if="{{!isModal}}" onCheepTap="showCheepModal"/>
+<cheep-modal a:if="{{isModal}}" onShowCheepModal="showCheepModal"/>
