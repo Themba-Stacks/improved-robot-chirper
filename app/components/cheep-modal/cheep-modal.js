@@ -9,7 +9,7 @@ Component({
   methods: {
      submit: async function () {
       // await newCheepRequest(this.data.cheepValue)
-      // console.log(this.data.cheepValue)
+      console.log(this.data.cheepValue)
       this.props.onShowCheepModal();
     },
     getValue(event) {
