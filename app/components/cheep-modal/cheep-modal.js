@@ -1,19 +1,20 @@
-import { newCheepRequest } from "/requests/request"
+import { newCheepRequest } from "/requests/request";
 
 Component({
   mixins: [],
-  data: {
-    cheepValue: ""
-  },
+  data: {},
   props: {},
   methods: {
-     submit: async function () {
-      // await newCheepRequest(this.data.cheepValue)
-      // console.log(this.data.cheepValue)
+    onSubmit: async function (event) {
+      await newCheepRequest({
+        userName: "user",
+        profileImageSrc:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+        message: event.detail.value.cheeptext,
+      });
       this.props.onShowCheepModal();
+
+      this.$page.getCheeps();
     },
-    getValue(event) {
-      this.setData({cheepValue: event.detail.value})
-    }
   },
 });

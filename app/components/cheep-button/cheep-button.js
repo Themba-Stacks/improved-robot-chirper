@@ -1,9 +1,5 @@
 Component({
   data: {},
-  props: {},
-  methods: {
-    cheepTap() {
-      this.props.onCheepButtonTap();
-    }
-  },
+  props: { form_type: "" },
+  methods: {},
 });
