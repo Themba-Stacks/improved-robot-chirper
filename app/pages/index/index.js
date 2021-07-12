@@ -34,7 +34,6 @@ Page({
   showCheepModal() {
     this.setData({isModal: !this.data.isModal});
   },
-
   test(e) {
     console.log('hello')
     my.alert({

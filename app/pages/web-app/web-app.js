@@ -13,20 +13,23 @@ Page({
 
 
   onMessage(e) {
-
-    // if (e.detail.action === 'auth') {
-    //   authenticateUser()
-    // }
-
-    // if (e.detail.action === 'pay') {
-    //   pay()
-    // }
+    switch(e.detail.message){
+      case "auth":
+        authenticateUser()
+      break;
+      case 'pay':
+        pay();
+      break;
+      default:
+        console.log('No message handler for:',e.detail.message)  
+      break;
+    }
 
     my.alert({
       content: JSON.stringify(e.detail),
     });
-    setTimeout(() => {
-      this.webViewContext.postMessage({ actionResult: "auth success" });
-    }, 1000)
+    
+    this.webViewContext.postMessage({ message: "Message Received" });
+  
   },
 });
