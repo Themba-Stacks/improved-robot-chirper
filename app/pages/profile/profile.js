@@ -16,6 +16,15 @@ Page({
     this.setData({userProfile: profile, userCheeps: filteredCheeps})
   },
 
+  async getCheeps() {
+    const profile = this.data.userProfile;
+    const cheeps = await cheepRequest();
+    const filteredCheeps = cheeps.filter((cheep) => {
+      return cheep.handle === profile.uniqueHandle
+    });
+    this.setData({userCheeps: filteredCheeps})
+  },
+
   showCheepModal() {
     this.setData({isModal: !this.data.isModal});
   },
