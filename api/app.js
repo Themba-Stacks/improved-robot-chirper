@@ -1,5 +1,5 @@
 const express = require("express");
-const cheeps = require("./mock_cheeps.json");
+let cheeps = require("./mock_cheeps.json");
 const profile = require("./mock_profile.json");
 const fs = require("fs");
 const bodyParser = require("body-parser");
@@ -12,8 +12,8 @@ const path = require("path");
 app.use(express.json());
 
 app.get("/", (req, res) => {
-//   res.send("Hello World");
-  res.sendFile(path.join(__dirname, './index.html'));
+  //   res.send("Hello World");
+  res.sendFile(path.join(__dirname, "./index.html"));
 });
 
 app.post("/auth", async (req, res) => {
@@ -167,6 +167,8 @@ app.post("/cheep", (req, res) => {
     const cheepsData = JSON.parse(data);
     console.log(cheepsData);
     cheepsData.cheeps.push(req.body);
+
+    cheeps = cheepsData;
 
     fs.writeFile(
       "./mock_cheeps.json",

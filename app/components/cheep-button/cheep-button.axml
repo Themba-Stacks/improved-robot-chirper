@@ -1,3 +1,3 @@
-<view class="cheep-button" onTap="cheepTap">
+<button class="cheep-button" form-type="{{form_type}}">
   <slot></slot>
-</view>
+</button>
