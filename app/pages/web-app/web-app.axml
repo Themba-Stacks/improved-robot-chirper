@@ -1,4 +1,3 @@
 <view>
   <web-view id="web-view-1" src="http://localhost:3000" onMessage="onMessage"></web-view>
-  <cheep-nav title="{{title}}"/>
 </view>

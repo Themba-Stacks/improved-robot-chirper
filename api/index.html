@@ -6,20 +6,28 @@
     <script type="text/javascript" src="https://appx/web-view.min.js"></script>
 
     <script>
-      try {
-        // my.alert({
-        //   content: "Web App Init"
-        // });
-
-        my.onMessage = function(e) {
-          console.log(e);
-        //   alert(e);
+      function sendMessageToMiniApp(message) {
+        try {
+          console.log("Sending message");
           document.getElementById("result").innerHTML =
-            "Message Received from Mini-App";
-        //   my.alert({
-        //     content: JSON.stringify(e.detail),
-        //   });
+            "Waiting for message...";
+          my.postMessage({ message: message });
+        } catch (error) {
+          if (error.message === "my is not defined") {
+            console.log("This is in a Browser");
+          } else {
+            throw error;
+          }
+        }
+      }
+
+      try {
+        my.onMessage = function (e) {
+          console.log(e);
+          document.getElementById("result").innerHTML =
+            "<p>" + e.message + "</p>";
         };
+        console.log("This is the mini-app");
       } catch (error) {
         if (error.message === "my is not defined") {
           console.log("This is in a Browser");
@@ -28,24 +36,39 @@
         }
       }
     </script>
+
+    <style>
+      body {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+      }
+
+      div {
+        margin: 10px 0 10px 0;
+      }
+
+      #sendButton {
+        width: 200px;
+        height: 50px;
+        margin-top: 20px;
+      }
+    </style>
   </head>
 
   <body>
     My App
-    <div id="result">loading</div>
+    <div id="result">Waiting for message...</div>
+    <input id="messageTextField" type="text" />
+    <button id="sendButton">Send message to Mini-App</button>
   </body>
 
   <script>
-    try {
-      document.getElementById("result").innerHTML = "Sent Message";
-      my.postMessage({ action: "auth" });
-      console.log("This is a Mini-APP");
-    } catch (error) {
-      if (error.message === "my is not defined") {
-        console.log("This is in a Browser");
-      } else {
-        throw error;
-      }
-    }
+    const sendButton = document.getElementById("sendButton");
+    sendButton.addEventListener("click", () => {
+      const messageTextField = document.getElementById("messageTextField");
+      const messageText = messageTextField.value;
+      sendMessageToMiniApp(messageText);
+    });
   </script>
 </html>
