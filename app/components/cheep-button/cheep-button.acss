@@ -6,7 +6,7 @@
     width: 228rpx;
     border: 5rpx solid var(--primary-pink);
     border-radius: 25rpx;
-
+    margin: 5rpx 0;
     font-style: normal;
     font-weight: normal;
     font-size: 36rpx;
