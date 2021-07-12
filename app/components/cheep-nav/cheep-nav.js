@@ -7,7 +7,7 @@ Component({
   didUnmount() {},
   methods: {
     openProfile() {
-      my.navigateTo({
+      my.redirectTo({
         url: '../profile/profile'
       });
     },
@@ -17,12 +17,12 @@ Component({
       });
     },
     openView() {
-      my.navigateTo({
+      my.redirectTo({
         url: '../view/view'
       });
     },
     openHome() {
-      my.navigateTo({
+      my.redirectTo({
         url: '../index/index'
       });
     }
