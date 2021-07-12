@@ -16,5 +16,10 @@ Component({
 
       this.$page.getCheeps();
     },
+    onShow(event) {
+      if(event.target.id){
+        this.props.onShowCheepModal();
+      }
+    }
   },
 });
