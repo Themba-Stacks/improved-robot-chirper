@@ -1,7 +1,7 @@
 Component({
   mixins: [],
   data: {
-
+    
   },
   props: {
     cheep: {

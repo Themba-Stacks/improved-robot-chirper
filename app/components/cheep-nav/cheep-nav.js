@@ -16,11 +16,6 @@ Component({
         url: '../web-app/web-app'
       });
     },
-    openView() {
-      my.redirectTo({
-        url: '../view/view'
-      });
-    },
     openHome() {
       my.redirectTo({
         url: '../index/index'
